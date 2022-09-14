@@ -36,6 +36,7 @@ Berdasarkan [dataset] ini, akan dilatih model Machine Learning yang mampu untuk 
 Selain itu, dilakukan juga *Exploratory Data Analysis* (EDA) yang bertujuan untuk menghilangkan outliers, serta menampilkan korelasi antar data baik data kategorikal maupun data numerik.
 
 Berikut merupakan visualisasi boxplot dari data numerik dari LT, LB, dan Harga (JT).
+
 ![Visualisasi BoxPlot Harga (JT)](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download.png)
 
 ![Visualisasi BoxPlot LB](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(1).png)
@@ -45,22 +46,29 @@ Berikut merupakan visualisasi boxplot dari data numerik dari LT, LB, dan Harga (
 Dapat dilihat dari ketiga gambar tersebut, semua fitur memiliki outliers. Oleh karena itu, digunakan metode *Interquartile Range* (IQR) untuk mengatasi outliers tersebut. Sehingga, nantinya data akan direduksi dan dieliminasi guna mengatasi outliers.
 
 Selanjutnya, dilakukan *univariate analysis* untuk data kategorikal dan data numerik. 
+
 ![Visualisasi Data Kategorikal KT](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(4).png)
+
 Dari gambar diatas dapat disimpulkan bahwa pada fitur KT (Jumlah Kamar Tidur), data terbanyak ditempati oleh 4 kamar tidur dan data tersedikit ditempati oleh 10 kamar tidur.
 
 ![Visualisasi Data Kategorikal KT](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(5).png)
+
 Dari gambar diatas dapat disimpulkan bahwa pada fitur KM (Jumlah Kamar Mandi), data terbanyak ditempati oleh 3 kamar mandi dan data tersedikit ditempati oleh 10 kamar mandi.
 
 ![Visualisasi Data Kategorikal KT](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(6).png)
+
 Dari gambar diatas dapat disimpulkan bahwa pada fitur GRS (Jumlah Mobil yang Muat Dalam Garasi), data terbanyak ditempati oleh 2 mobil dan data tersedikit ditempati oleh 6 mobil.
 
 Visualisasi data numerik dilakukan dengan menggunakan plot histogram.
+
 ![Visualisasi Data Numerik](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(3).png)
+
 Dari gambar diatas, dapat ditarik kesimpulan, yaitu:
 - Pada data "Harga (JT)", data rumah kebanyakan terdapat direntang 2.500.000.000 hingga 5.000.000.000
 - Distribusi data miring ke kanan (right skewed) yang dimana akan berdampak pada hasil prediksi model.
 
 Selain itu, terdapat juga EDA *multivariate analysis* untuk data kategorikal dan data numerik.
+
 ![Visualisasi Data Kategorikal](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(7).png)
 ![Visualisasi Data Kategorikal](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(12).png)
 ![Visualisasi Data Kategorikal](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(13).png)
@@ -73,6 +81,7 @@ Dari data diatas, dapat disimpulkan:
 Pada data numerik, digunakan pairplot untuk melihat hubungan antara data fitur dan data target.
 
 ![Visualisasi Data Kategorikal](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(8).png)
+
 Dapat disimpulkan berdasarkan gambar diatas, bahwa fitur "LB" dan "LT" memiliki hubungan data yang positif dengan data "Price".
 
 Serta terdapat juga heatmap yang bertujuan untuk memvisualisasikan korelasi antara fitur "LB" dan "LT" dengan data "Price" agar lebih mudah untuk dilihat dan dipahami.
@@ -116,6 +125,7 @@ Berikut merupakan hasil dari MSE yang dilakukan oleh ketiga model Machine Learni
 Dapat dilihat pada gambar diatas, algoritma Random Forest memiliki nilai error yang paling kecil (berada di angka 52,6 untuk train dan 237 untuk test) dibandingkan kedua algoritma lainnya. Sedangkan untuk algoritma Boosting memiliki nilai error yang paling besar dibandingkan yang lainnya (berada di angka 317,32 untuk train dan 344,75 untuk test).
 
 Selain itu terdapat juga tabel hasil prediksi model-model serta nilai aktual dan visualisasi plottingan yang menampilkan data test dengan data yang diprediksi oleh model Machine Learning. 
+
 ![Tabel Prediksi](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/table_predict.png)
 ![Visualisasi Data Kategorikal](https://raw.githubusercontent.com/Viyaaa/Dicoding-ML-Terapan/main/download%20(11).png)
 
